@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chaparrita/static/css/main.e9c2b3bd.css",
-    "main.js": "/chaparrita/static/js/main.f5e5faf9.js",
+    "main.js": "/chaparrita/static/js/main.2a5b113f.js",
     "static/js/453.f7118908.chunk.js": "/chaparrita/static/js/453.f7118908.chunk.js",
     "index.html": "/chaparrita/index.html",
     "main.e9c2b3bd.css.map": "/chaparrita/static/css/main.e9c2b3bd.css.map",
-    "main.f5e5faf9.js.map": "/chaparrita/static/js/main.f5e5faf9.js.map",
+    "main.2a5b113f.js.map": "/chaparrita/static/js/main.2a5b113f.js.map",
     "453.f7118908.chunk.js.map": "/chaparrita/static/js/453.f7118908.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9c2b3bd.css",
-    "static/js/main.f5e5faf9.js"
+    "static/js/main.2a5b113f.js"
   ]
 }
