@@ -8,6 +8,14 @@ const Chaparrita = () => {
   const typingSpeed = 150;
 
   useEffect(() => {
+    console.log(`Para la Chaparrita Necia:
+      Talking to you always makes my day better chaparrita, and I keep finding myself wanting to message you at all hours. 
+      I know that opening up and getting closer can be a little scary, and I don’t want to rush you. 
+      But I genuinely enjoy every moment we talk, and I find myself missing it when we don’t. 
+      I’d love to have those conversations every night with the chaparrita I like. 
+      Is that so bad to want?
+      `)
+
     let timeoutId;
     let index = 0;
     const typeLetter = () => {
@@ -19,17 +27,8 @@ const Chaparrita = () => {
     }
 
     typeLetter();
-
-    console.log(`Para la Chaparrita Necia:
-      Talking to you always makes my day better chaparrita, and I keep finding myself wanting to message you at all hours. 
-      I know that opening up and getting closer can be a little scary, and I don’t want to rush you. 
-      But I genuinely enjoy every moment we talk, and I find myself missing it when we don’t. 
-      I’d love to have those conversations every night with the chaparrita I like. 
-      Is that so bad to want?
-      `)
-
-    return () => clearTimeout(timeoutId);
     
+    return () => clearTimeout(timeoutId);
   }, [word]);
 
   return (
