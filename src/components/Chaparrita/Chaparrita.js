@@ -19,10 +19,7 @@ const Chaparrita = () => {
     let index = 0;
     const typeLetter = () => {
       if(index < word.length - 1) {
-        setText((prev) => {
-          console.log('prev', prev);
-          return prev + word[index]
-        });
+        setText((prev) => prev + word[index]);
         index++;
         timeoutId = setTimeout(typeLetter, typingSpeed);
       }
