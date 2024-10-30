@@ -3,7 +3,7 @@ import './Chaparrita.css';
 
 const Chaparrita = () => {
   const [text, setText] = useState('');
-  const word = 'CHAPARRITA NECIA \u2665';
+  const word = 'CHHAPARRITA NECIA \u2665';
   const typingSpeed = 150;
 
   useEffect(() => {
@@ -19,7 +19,10 @@ const Chaparrita = () => {
     let index = 0;
     const typeLetter = () => {
       if(index < word.length - 1) {
-        setText((prev) => prev + word[index]);
+        setText((prev) => {
+          console.log('prev', prev);
+          return prev + word[index]
+        });
         index++;
         timeoutId = setTimeout(typeLetter, typingSpeed);
       }
