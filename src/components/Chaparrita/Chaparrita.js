@@ -3,8 +3,7 @@ import './Chaparrita.css';
 
 const Chaparrita = () => {
   const [text, setText] = useState('');
-  let word = 'chaparrita necia \u2665';
-  word = word.toUpperCase();
+  const word = 'CHAPARRITA NECIA \u2665';
   const typingSpeed = 150;
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const Chaparrita = () => {
     }
 
     typeLetter();
-    
+      
     return () => clearTimeout(timeoutId);
   }, [word]);
 
