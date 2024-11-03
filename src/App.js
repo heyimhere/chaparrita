@@ -1,18 +1,14 @@
 import './App.css';
 import Chaparrita from './components/Chaparrita/Chaparrita';
-import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import usePageTracking from './lib/gtag';
 
-<GoogleAnalytics GA_MEASUREMENT_ID={process.env.REACT_APP_GA_MEASUREMENT_ID} />
 function App() {
+  usePageTracking();
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path='/chaparrita' element={<Chaparrita />} />
-        </Routes>
-      </div>
-    </Router> 
+    <Routes>
+      <Route path='/chaparrita' element={<Chaparrita />} />
+    </Routes>
    
   );
 }
