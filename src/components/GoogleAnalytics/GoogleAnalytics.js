@@ -5,8 +5,6 @@ import * as gtag from '../../lib/gtag';
 export default function GoogleAnalytics({GA_MEASUREMENT_ID}) {
   const params = useParams();
   const pathName = useLocation();
-  console.log('params', params);
-  console.log('pathName', pathName);
 
   useEffect(() => {
     const url = params + pathName.toString();
