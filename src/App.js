@@ -7,7 +7,9 @@ import usePageTracking from './lib/gtag';
 
 function App() {
   useEffect(() => {
+
     ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+
   }, []);
 
   usePageTracking();
